@@ -1,3 +1,10 @@
+// MOBILE MENU TOGGLE
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
 
 // THEME TOGGLE + SAVE MODE
 
@@ -28,9 +35,9 @@ toggleBtn.addEventListener("click", () => {
 
 // SMOOTH SCROLL NAVBAR
 
-const navLinks = document.querySelectorAll("nav a");
+const navItems = document.querySelectorAll(".nav-links a");
 
-navLinks.forEach(link => {
+navItems.forEach(link => {
 
     link.addEventListener("click", function(e){
 
@@ -51,7 +58,7 @@ navLinks.forEach(link => {
 // ACTIVE NAV LINK ON SCROLL
 
 const sections = document.querySelectorAll("section");
-const navItems = document.querySelectorAll("nav a");
+// const navItems = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
 
